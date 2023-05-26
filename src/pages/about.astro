@@ -1,8 +1,10 @@
 ---
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
 import '../styles/global.css';
 const pageTitle = "About Me";
 const identity = {
-	fullName: "Md. Asad",
+	fullName: "Md. Asad Chowdhary",
 	country: "Bangladesh",
 	occupation: "Student",
 	hobbies: ["Reading", "Writing", "Learning", "Exploring"],
@@ -49,11 +51,7 @@ const textCase = "uppercase";
 				set a goal to learn Everything that really one needs.
 			</p>
 		</header>
-		<nav>
-			<a href="/">Home</a>
-			<a href="/about">About</a>
-			<a href="/blog">Blog</a>
-		</nav>
+		<Header/>
 		<main>
 			<p>Here are a few facts about me:</p>
 			<ul>
@@ -89,5 +87,9 @@ const textCase = "uppercase";
 				)
 			}
 		</main>
+		<Footer/>
+		<script>
+			import "../scripts/menu.js";
+		</script>
 	</body>
 </html>

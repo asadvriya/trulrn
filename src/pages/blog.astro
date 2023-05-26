@@ -1,4 +1,6 @@
 ---
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
 import '../styles/global.css';
 const pageTitle = "My Learning Blog";
 ---
@@ -19,16 +21,16 @@ const pageTitle = "My Learning Blog";
             <h2>Welcome to TruLrn Blog Section</h2>
             <p>In this website, I will post article on about Education, Healthcare, Technology, Facts and much more</p>
 		</header>	
-        <nav>
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-            <a href="/blog">Blog</a>
-        </nav>	
+        <Header/>
 		<ul>
 			<li><a href="/posts/post-1/">Post 1</a></li>
 			<li><a href="/posts/post-2/">Post 2</a></li>
 			<li><a href="/posts/post-3/">Post 3</a></li>
 			
 		  </ul>
+		 <Footer/> 
+		 <script>
+			import "../scripts/menu.js";
+		</script>
 	</body>
 </html>
