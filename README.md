@@ -1,4 +1,4 @@
-# Astro Starter Kit: Minimal
+# TruLrn - True Learn | Truly Learn Everything.
 
 ```
 npm create astro@latest -- --template minimal
