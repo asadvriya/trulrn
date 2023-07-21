@@ -1,0 +1,15 @@
+---
+const {title, url, pubDate, image, author} = Astro.props;
+---
+
+
+<li class="post-thumbline"> 		
+    <a href={url} >
+        <article class="thumbline-item">
+            <h3 style="margin: 0px;">{title}</h3>
+            <p style="margin:0px; margin-bottom: 13px;">Published: {pubDate.slice(0,10 )}</p>
+    <img src={image} alt="image" height="100px" width="200px"> 
+    <p style="margin: 0px; margin-top: 5px;">by {author}</p> </article>
+        </a> 
+        
+    </li>

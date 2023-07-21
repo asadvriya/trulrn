@@ -1,34 +1,15 @@
 ---
-import Footer from "../components/Footer.astro";
-import Header from "../components/Header.astro";
-import "../styles/global.css";
-const pageTitle = "TruLrn";
----
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Greeting from '../components/Greeting.jsx';
+const pageTitle = "Home Page";
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="theme-color" content="#ffffff" />
-		<meta name="generator" content={Astro.generator} />
-		<meta
-			name="description"
-			content="TruLrn is a knowledge portal website for experiencing, learning and gaining skills."
-		/>
-		<title>{pageTitle} - True Learn | Truly Learn Everything</title>
-	</head>
-	<body>
-		<header>
-			<h1>
-				{pageTitle}
-			</h1>
-			<p>Truly Learn Everything</p>
-		</header>
-		<Header />
-		<Footer />
-		<script>
-			import "../scripts/menu.js";
-		</script>
-	</body>
-</html>
+---
+<BaseLayout pageTitle={pageTitle}>
+  <h2>My awesome blog subtitle</h2>
+  <!--
+    <Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
+   -->
+
+</BaseLayout>
+
+

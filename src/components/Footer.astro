@@ -1,15 +1,56 @@
 ---
 import Social from './Social.astro';
+
+import facebook from './social/facebook.png';
+import twitter from './social/twitter.png';
+import github from './social/github.png';
+import youtube from './social/youtube.png';
 ---
 <style>
   footer {
     display: flex;
-    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
     margin-top: 2rem;
   }
+  .footer-details{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .copyright{
+    margin: 0;
+  }
+  .copyright-address{
+    margin: 0;
+  }
+  .contact-help{
+    text-decoration: underline;
+  }
 </style>
+
 <footer>
-  <Social platform="twitter" username="asadvriya" />
-  <Social platform="github" username="asadvriya" />
-  <Social platform="youtube" username="@trulrn" />
+<section class="footer-socials">
+  <Social platform="twitter" username="asadvriya" platformLogo={twitter} />
+  <Social platform="github" username="asadvriya" platformLogo={github}/>
+  <Social platform="youtube" username="@trulrn" platformLogo={youtube}/>
+  <Social platform="facebook" username="@trulrn" platformLogo={facebook}/>
+</section>
+<section class="footer-details">
+  <address class="copyright-address">
+    For more details, 
+    <a href="mailto:trulrn@gmail.com;trulrn@tuta.io;asadvriya@tuta.io;asadvriya@gmail.com" class="contact-help">Contact Us</a>.
+   </address>
+   <p class="copyright"><small>© copyright <span id="myId"></span> by TruLrn</small></p>
+   
+<script> 
+var date = new Date();
+var yyyy = date.getFullYear(); 
+var newDate = yyyy; 
+var p = document.getElementById("myId"); 
+p.innerHTML = newDate; 
+</script> 
+</section>
 </footer>
