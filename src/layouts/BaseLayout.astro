@@ -10,10 +10,12 @@ const siteTitle = "TruLrn | Truly Learn Everything";
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <link rel="icon" href="/trulrn_favicon.ico" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/trulrn_192_logo.png" />
+    <link rel="manifest" href="/manifest.json" />
     <meta name="viewport" content="width=device-width" />
     <meta name="theme-color" content="#ffffff" />
-    <meta name="generator" content={Astro.generator} />
     <meta
       name="description"
       content="TruLrn is a knowledge portal website for experiencing, learning and gaining skills."
@@ -44,6 +46,20 @@ const siteTitle = "TruLrn | Truly Learn Everything";
     <Footer />
     <script>
       import "../scripts/menu.js";
+    </script>
+    <!-- SERVICE WORKER SCRIPT -->
+	<script>
+    if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+    navigator.serviceWorker.register('serviceWorker.js').then(function(registration) {
+    // Registration was successful
+    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }, function(err) {
+    // registration failed :(
+    console.log('ServiceWorker registration failed: ', err);
+    });
+    });
+    }
     </script>
   </body>
 </html>
