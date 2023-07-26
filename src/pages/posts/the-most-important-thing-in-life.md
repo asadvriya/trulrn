@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'The Most Important Thing in Life'
-pubDate: 2022-07-01
+pubDate: 2023-07-26
 description: "The most important things in life are those that bring us joy, fulfillment, and a sense of purpose. These things can be different for everyone, but they often include relationships with loved ones, experiences that make us feel alive, and activities that allow us to express our creativity. When we focus on these things, we live more meaningful and fulfilling lives."
 author: 'Md. Asad Chowdhary'
 authorName: 'asadvriya'
