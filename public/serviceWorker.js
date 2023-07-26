@@ -3,10 +3,6 @@ let CACHE_NAME = 'my-site-cache-v1';
 const urlsToCache = [
 '/',
 '/index.html',
-    '/about.html',
-    '/blog.html',
-    '/tags.html',
-    '/*.html',
 ];
 self.addEventListener('install', function(event) {
 /* Perform install steps for Service Worker */
