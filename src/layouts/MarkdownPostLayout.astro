@@ -5,10 +5,10 @@ const allPosts = await Astro.glob("../pages/posts/*.md");
 const tags = [...new Set(allPosts.map((post) => post.frontmatter.tags).flat())];
 ---
 
-<BaseLayout pageTitle={frontmatter.title}>
+<BaseLayout pageTitle={frontmatter.title}, pageDescription={frontmatter.pageDescription}>
   
   <p>Published on: {frontmatter.pubDate.slice(0, 10)} <br/> by <a href={`/author/${frontmatter.authorName}`}><u>{frontmatter.author}</u></a></p>
-  <p><em>{frontmatter.description}</em></p>
+  <p><em>{frontmatter.pageDescription}</em></p>
   <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} />
   
 

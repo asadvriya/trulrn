@@ -2,6 +2,8 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import '../styles/global.css';
 const pageTitle = "About Us";
+const pageDescription= "TruLrn, with having the motto 'Truly Learn Everything' desire to set a goal to teach Everything that  one really needs."
+/* 
 const identity = {
 	fullName: "Md. Asad Chowdhary",
 	country: "Bangladesh",
@@ -12,20 +14,23 @@ const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
 const happy = true;
 const finished = true;
 const goal = 3;
+
+*/
 const skillColor = "cyan";
 const fontWeight = "bold";
 const textCase = "uppercase";
 ---
-		  </ul><BaseLayout pageTitle={pageTitle}>
+		  </ul><BaseLayout pageTitle={pageTitle}, pageDescription={pageDescription}>
 			<main>
 				<article>
 				<h2>TruLrn - Originated from True Learn</h2>
 				<p>
 					TruLrn, with having the motto "Truly Learn Everything" desire to
-					set a goal to learn Everything that really one needs.
+					set a goal to teach Everything that  one really needs.
 				</p>
 				</article>
-				<p>Here are a few facts about me:</p>
+				<!-- 
+<p>Here are a few facts about us:</p>
 				<ul>
 					<li>My name is {identity.fullName}.</li>
 					<li>
@@ -58,5 +63,8 @@ const textCase = "uppercase";
 						<p>My goal is not 3 days.</p>
 					)
 				}
+
+
+				 -->
 			</main>
 		  </BaseLayout>

@@ -3,6 +3,7 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import "../styles/global.css";
 const { pageTitle } = Astro.props;
+const { pageDescription } = Astro.props;
 const siteTitle = "TruLrn | Truly Learn Everything";
 ---
 
@@ -18,7 +19,7 @@ const siteTitle = "TruLrn | Truly Learn Everything";
     <meta name="viewport" content="width=device-width" />
     <meta
       name="description"
-      content="TruLrn is a knowledge portal website for experiencing, learning and gaining skills."
+      content=`${pageDescription}`
     />
     <title>{pageTitle} 🎆 {siteTitle}</title>
     <!-- Google tag (gtag.js) -->
