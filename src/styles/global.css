@@ -130,7 +130,7 @@ h1 {
 
 .nav-links a {
   width: 100%;
-  background-color: #3604858f;
+  background-color: #71076026;
   display: block;
   text-align: center;
   padding: 7px;
@@ -182,10 +182,9 @@ main {
 
 .post-thumbline {
   display: flex;
-  background-color: #42016859;
   padding: 10px;
   border-radius: 10px;
-  box-shadow: 0px 0px 5px inset #cc05ab50;
+  box-shadow: 0px 0px 20px 6px inset #cc05ab50;
 }
 
 .post-thumbline:hover {
