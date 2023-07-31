@@ -25,11 +25,11 @@ Chest pain is a discomfort or pain that you feel anywhere along the front of you
 
 ## Possible Causes of Chest Pain
 
-* Heart problems, such as a heart attack, angina, or pericarditis
-* Lung problems, such as pneumonia, pleurisy, or a pulmonary embolism
-* Gastrointestinal problems, such as a stomach ulcer, gastroesophageal reflux disease (GERD), or pancreatitis
-* Bone or muscle problems, such as a rib fracture or costochondritis
-* Anxiety or panic attacks
+* **Heart problems**, such as a heart attack, angina, or pericarditis
+* **Lung problems**, such as pneumonia, pleurisy, or a pulmonary embolism
+* **Gastrointestinal problems**, such as a stomach ulcer, gastroesophageal reflux disease (GERD), or pancreatitis
+* **Bone or muscle problems**, such as a rib fracture or costochondritis
+* **Anxiety or panic attacks**
 </section>
 <section id="types">
 
